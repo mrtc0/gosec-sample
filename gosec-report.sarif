@@ -73,10 +73,10 @@
 					"ruleId": "G401 (CWE-326)",
 					"ruleIndex": 0,
 					"level": "warning",
-					"Message": {
+					"message": {
 						"text": "Use of weak cryptographic primitive"
 					},
-					"Locations": [
+					"locations": [
 						{
 							"physicalLocation": {
 								"artifactLocation": {
@@ -95,10 +95,10 @@
 					"ruleId": "G501 (CWE-327)",
 					"ruleIndex": 1,
 					"level": "warning",
-					"Message": {
+					"message": {
 						"text": "Blocklisted import crypto/md5: weak cryptographic primitive"
 					},
-					"Locations": [
+					"locations": [
 						{
 							"physicalLocation": {
 								"artifactLocation": {
@@ -129,10 +129,10 @@
 					"ruleId": "G104 (CWE-703)",
 					"ruleIndex": 2,
 					"level": "warning",
-					"Message": {
+					"message": {
 						"text": "Errors unhandled."
 					},
-					"Locations": [
+					"locations": [
 						{
 							"physicalLocation": {
 								"artifactLocation": {
