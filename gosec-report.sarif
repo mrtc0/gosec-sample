@@ -59,71 +59,71 @@
 							}
 						}
 					]
+				}
+			},
+			"results": [
+			
+				{
+					"ruleId": "G401 (CWE-326)",
+					"ruleIndex": 0,
+					"level": "MEDIUM",
+					"message": {
+						"text": "Use of weak cryptographic primitive"
+					},
+					"locations": [{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "/Users/kohei.morita/go/src/github.com/mrtc0/gosec-sample/main.go:31"
+							},
+							"region": {
+								"startLine": 31,
+								"startColumn": 1,
+								"endColumn": 1
+							}
+						}
+					}]
 				},
-				"results": [
-				
-					{
-						"ruleId": "G401 (CWE-326)",
-						"ruleIndex": 0,
-						"level": "MEDIUM",
-						"message": {
-							"text": "Use of weak cryptographic primitive"
-						},
-						"locations": [{
-							"physicalLocation": {
-								"artifactLocation": {
-									"uri": "/Users/kohei.morita/go/src/github.com/mrtc0/gosec-sample/a.go:31"
-								},
-								"region": {
-									"startLine": 31,
-									"startColumn": 1,
-									"endColumn": 1
-								}
-							}
-						}]
+				{
+					"ruleId": "G501 (CWE-327)",
+					"ruleIndex": 1,
+					"level": "MEDIUM",
+					"message": {
+						"text": "Blocklisted import crypto/md5: weak cryptographic primitive"
 					},
-					{
-						"ruleId": "G501 (CWE-327)",
-						"ruleIndex": 1,
-						"level": "MEDIUM",
-						"message": {
-							"text": "Blocklisted import crypto/md5: weak cryptographic primitive"
-						},
-						"locations": [{
-							"physicalLocation": {
-								"artifactLocation": {
-									"uri": "/Users/kohei.morita/go/src/github.com/mrtc0/gosec-sample/a.go:4"
-								},
-								"region": {
-									"startLine": 4,
-									"startColumn": 1,
-									"endColumn": 1
-								}
+					"locations": [{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "/Users/kohei.morita/go/src/github.com/mrtc0/gosec-sample/main.go:4"
+							},
+							"region": {
+								"startLine": 4,
+								"startColumn": 1,
+								"endColumn": 1
 							}
-						}]
+						}
+					}]
+				},
+				{
+					"ruleId": "G104 (CWE-703)",
+					"ruleIndex": 2,
+					"level": "LOW",
+					"message": {
+						"text": "Errors unhandled."
 					},
-					{
-						"ruleId": "G104 (CWE-703)",
-						"ruleIndex": 2,
-						"level": "LOW",
-						"message": {
-							"text": "Errors unhandled."
-						},
-						"locations": [{
-							"physicalLocation": {
-								"artifactLocation": {
-									"uri": "/Users/kohei.morita/go/src/github.com/mrtc0/gosec-sample/a.go:27"
-								},
-								"region": {
-									"startLine": 27,
-									"startColumn": 1,
-									"endColumn": 1
-								}
+					"locations": [{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "/Users/kohei.morita/go/src/github.com/mrtc0/gosec-sample/main.go:27"
+							},
+							"region": {
+								"startLine": 27,
+								"startColumn": 1,
+								"endColumn": 1
 							}
-						}]
-					}
-				]
-			}
+						}
+					}]
+				}
+			]
 		}
 	]
 }
