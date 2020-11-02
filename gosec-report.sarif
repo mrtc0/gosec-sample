@@ -1,0 +1,129 @@
+
+{
+	"$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.4.json",
+	"version": "2.1.0",
+	"runs": [
+		{
+			"tool": {
+				"driver": {
+					"name": "gosec",
+					"fullName": "gosec - Golang Security Checker",
+					"rules": [
+						
+						{
+							"id": "G401 (CWE-326)",
+							"name": "Use of weak cryptographic primitive",
+							"shortDescription": {
+								"text": "Use of weak cryptographic primitive"
+							},
+							"fullDescription": {
+								"text": "Use of weak cryptographic primitive"
+							},
+							"properties": {
+								"tags": [
+									"CWE-326",
+									"MEDIUM"
+								]
+							}
+						},
+						{
+							"id": "G501 (CWE-327)",
+							"name": "Blocklisted import crypto/md5: weak cryptographic primitive",
+							"shortDescription": {
+								"text": "Blocklisted import crypto/md5: weak cryptographic primitive"
+							},
+							"fullDescription": {
+								"text": "Blocklisted import crypto/md5: weak cryptographic primitive"
+							},
+							"properties": {
+								"tags": [
+									"CWE-327",
+									"MEDIUM"
+								]
+							}
+						},
+						{
+							"id": "G104 (CWE-703)",
+							"name": "Errors unhandled.",
+							"shortDescription": {
+								"text": "Errors unhandled."
+							},
+							"fullDescription": {
+								"text": "Errors unhandled."
+							},
+							"properties": {
+								"tags": [
+									"CWE-703",
+									"LOW"
+								]
+							}
+						}
+					]
+				},
+				"results": [
+				
+					{
+						"ruleId": "G401 (CWE-326)",
+						"ruleIndex": 0,
+						"level": "MEDIUM",
+						"message": {
+							"text": "Use of weak cryptographic primitive"
+						},
+						"locations": [{
+							"physicalLocation": {
+								"artifactLocation": {
+									"uri": "/Users/kohei.morita/go/src/github.com/mrtc0/gosec-sample/a.go:31"
+								},
+								"region": {
+									"startLine": 31,
+									"startColumn": 1,
+									"endColumn": 1
+								}
+							}
+						}]
+					},
+					{
+						"ruleId": "G501 (CWE-327)",
+						"ruleIndex": 1,
+						"level": "MEDIUM",
+						"message": {
+							"text": "Blocklisted import crypto/md5: weak cryptographic primitive"
+						},
+						"locations": [{
+							"physicalLocation": {
+								"artifactLocation": {
+									"uri": "/Users/kohei.morita/go/src/github.com/mrtc0/gosec-sample/a.go:4"
+								},
+								"region": {
+									"startLine": 4,
+									"startColumn": 1,
+									"endColumn": 1
+								}
+							}
+						}]
+					},
+					{
+						"ruleId": "G104 (CWE-703)",
+						"ruleIndex": 2,
+						"level": "LOW",
+						"message": {
+							"text": "Errors unhandled."
+						},
+						"locations": [{
+							"physicalLocation": {
+								"artifactLocation": {
+									"uri": "/Users/kohei.morita/go/src/github.com/mrtc0/gosec-sample/a.go:27"
+								},
+								"region": {
+									"startLine": 27,
+									"startColumn": 1,
+									"endColumn": 1
+								}
+							}
+						}]
+					}
+				]
+			}
+		}
+	]
+}
