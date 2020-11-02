@@ -66,7 +66,7 @@
 				{
 					"ruleId": "G401 (CWE-326)",
 					"ruleIndex": 0,
-					"level": "MEDIUM",
+					"level": "warning",
 					"message": {
 						"text": "Use of weak cryptographic primitive"
 					},
@@ -86,7 +86,7 @@
 				{
 					"ruleId": "G501 (CWE-327)",
 					"ruleIndex": 1,
-					"level": "MEDIUM",
+					"level": "warning",
 					"message": {
 						"text": "Blocklisted import crypto/md5: weak cryptographic primitive"
 					},
@@ -106,7 +106,7 @@
 				{
 					"ruleId": "G104 (CWE-703)",
 					"ruleIndex": 2,
-					"level": "LOW",
+					"level": "warning",
 					"message": {
 						"text": "Errors unhandled."
 					},
