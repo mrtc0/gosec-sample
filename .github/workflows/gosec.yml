@@ -6,11 +6,14 @@ on:
   pull_request:
 jobs:
   build:
-    name: Build
+    name: gosec
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      # - name: Run gosec
+      #   uses: gosec -fmt=sarif ... > gosec-report.sarif
 
       - name: Upload Gosec scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v1
