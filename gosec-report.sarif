@@ -83,7 +83,7 @@
 									"uri": "main.go"
 								},
 								"region": {
-									"line": 31,
+									"startLine": 31,
 									"startColumn": 10,
 									"endColumn": 10
 								}
@@ -105,7 +105,7 @@
 									"uri": "main.go"
 								},
 								"region": {
-									"line": 31,
+									"startLine": 31,
 									"startColumn": 10,
 									"endColumn": 10
 								}
@@ -117,7 +117,7 @@
 									"uri": "main.go"
 								},
 								"region": {
-									"line": 4,
+									"startLine": 4,
 									"startColumn": 2,
 									"endColumn": 2
 								}
@@ -139,7 +139,7 @@
 									"uri": "main.go"
 								},
 								"region": {
-									"line": 31,
+									"startLine": 31,
 									"startColumn": 10,
 									"endColumn": 10
 								}
@@ -151,7 +151,7 @@
 									"uri": "main.go"
 								},
 								"region": {
-									"line": 4,
+									"startLine": 4,
 									"startColumn": 2,
 									"endColumn": 2
 								}
@@ -163,7 +163,7 @@
 									"uri": "main.go"
 								},
 								"region": {
-									"line": 27,
+									"startLine": 27,
 									"startColumn": 2,
 									"endColumn": 2
 								}
