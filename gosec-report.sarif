@@ -73,12 +73,12 @@
 					"locations": [{
 						"physicalLocation": {
 							"artifactLocation": {
-								"uri": "/Users/kohei.morita/go/src/github.com/mrtc0/gosec-sample/main.go:31"
+								"uri": "/main.go"
 							},
 							"region": {
 								"startLine": 31,
-								"startColumn": 1,
-								"endColumn": 1
+								"startColumn": 10,
+								"endColumn": 10
 							}
 						}
 					}]
@@ -93,12 +93,12 @@
 					"locations": [{
 						"physicalLocation": {
 							"artifactLocation": {
-								"uri": "/Users/kohei.morita/go/src/github.com/mrtc0/gosec-sample/main.go:4"
+								"uri": "/main.go"
 							},
 							"region": {
 								"startLine": 4,
-								"startColumn": 1,
-								"endColumn": 1
+								"startColumn": 2,
+								"endColumn": 2
 							}
 						}
 					}]
@@ -113,12 +113,12 @@
 					"locations": [{
 						"physicalLocation": {
 							"artifactLocation": {
-								"uri": "/Users/kohei.morita/go/src/github.com/mrtc0/gosec-sample/main.go:27"
+								"uri": "/main.go"
 							},
 							"region": {
 								"startLine": 27,
-								"startColumn": 1,
-								"endColumn": 1
+								"startColumn": 2,
+								"endColumn": 2
 							}
 						}
 					}]
