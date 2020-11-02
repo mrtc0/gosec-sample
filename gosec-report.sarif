@@ -1,4 +1,3 @@
-
 {
 	"$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.4.json",
 	"version": "2.1.0",
@@ -7,9 +6,8 @@
 			"tool": {
 				"driver": {
 					"name": "gosec",
-					"fullName": "gosec - Golang Security Checker",
+					"informationUri": "https://github.com/securego/gosec/",
 					"rules": [
-						
 						{
 							"id": "G401 (CWE-326)",
 							"name": "Use of weak cryptographic primitive",
@@ -18,6 +16,9 @@
 							},
 							"fullDescription": {
 								"text": "Use of weak cryptographic primitive"
+							},
+							"help": {
+								"text": "Use of weak cryptographic primitive\nSeverity: MEDIUM\nConfidence: HIGH\nCWE: https://cwe.mitre.org/data/definitions/326.html"
 							},
 							"properties": {
 								"tags": [
@@ -35,6 +36,9 @@
 							"fullDescription": {
 								"text": "Blocklisted import crypto/md5: weak cryptographic primitive"
 							},
+							"help": {
+								"text": "Blocklisted import crypto/md5: weak cryptographic primitive\nSeverity: MEDIUM\nConfidence: HIGH\nCWE: https://cwe.mitre.org/data/definitions/327.html"
+							},
 							"properties": {
 								"tags": [
 									"CWE-327",
@@ -51,6 +55,9 @@
 							"fullDescription": {
 								"text": "Errors unhandled."
 							},
+							"help": {
+								"text": "Errors unhandled.\nSeverity: LOW\nConfidence: HIGH\nCWE: https://cwe.mitre.org/data/definitions/703.html"
+							},
 							"properties": {
 								"tags": [
 									"CWE-703",
@@ -62,66 +69,107 @@
 				}
 			},
 			"results": [
-			
 				{
 					"ruleId": "G401 (CWE-326)",
 					"ruleIndex": 0,
 					"level": "warning",
-					"message": {
+					"Message": {
 						"text": "Use of weak cryptographic primitive"
 					},
-					"locations": [{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "main.go"
-							},
-							"region": {
-								"startLine": 31,
-								"startColumn": 10,
-								"endColumn": 10
+					"Locations": [
+						{
+							"physicalLocation": {
+								"artifactLocation": {
+									"uri": "main.go"
+								},
+								"region": {
+									"line": 31,
+									"startColumn": 10,
+									"endColumn": 10
+								}
 							}
 						}
-					}]
+					]
 				},
 				{
 					"ruleId": "G501 (CWE-327)",
 					"ruleIndex": 1,
 					"level": "warning",
-					"message": {
+					"Message": {
 						"text": "Blocklisted import crypto/md5: weak cryptographic primitive"
 					},
-					"locations": [{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "main.go"
-							},
-							"region": {
-								"startLine": 4,
-								"startColumn": 2,
-								"endColumn": 2
+					"Locations": [
+						{
+							"physicalLocation": {
+								"artifactLocation": {
+									"uri": "main.go"
+								},
+								"region": {
+									"line": 31,
+									"startColumn": 10,
+									"endColumn": 10
+								}
+							}
+						},
+						{
+							"physicalLocation": {
+								"artifactLocation": {
+									"uri": "main.go"
+								},
+								"region": {
+									"line": 4,
+									"startColumn": 2,
+									"endColumn": 2
+								}
 							}
 						}
-					}]
+					]
 				},
 				{
 					"ruleId": "G104 (CWE-703)",
 					"ruleIndex": 2,
 					"level": "warning",
-					"message": {
+					"Message": {
 						"text": "Errors unhandled."
 					},
-					"locations": [{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "main.go"
-							},
-							"region": {
-								"startLine": 27,
-								"startColumn": 2,
-								"endColumn": 2
+					"Locations": [
+						{
+							"physicalLocation": {
+								"artifactLocation": {
+									"uri": "main.go"
+								},
+								"region": {
+									"line": 31,
+									"startColumn": 10,
+									"endColumn": 10
+								}
+							}
+						},
+						{
+							"physicalLocation": {
+								"artifactLocation": {
+									"uri": "main.go"
+								},
+								"region": {
+									"line": 4,
+									"startColumn": 2,
+									"endColumn": 2
+								}
+							}
+						},
+						{
+							"physicalLocation": {
+								"artifactLocation": {
+									"uri": "main.go"
+								},
+								"region": {
+									"line": 27,
+									"startColumn": 2,
+									"endColumn": 2
+								}
 							}
 						}
-					}]
+					]
 				}
 			]
 		}
